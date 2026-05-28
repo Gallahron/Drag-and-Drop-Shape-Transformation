@@ -12,6 +12,7 @@ body {
 .quadrant {
     background-color: grey;
     border: 8px solid black;
+    box-sizing: border-box;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,4 +21,8 @@ body {
 .shape {
     height: 100px;
     width: 100px;
+}
+
+.highlighted {
+    filter: brightness(115%)
 }
