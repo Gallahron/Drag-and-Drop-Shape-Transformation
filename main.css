@@ -12,4 +12,33 @@ body {
 .quadrant {
     background-color: grey;
     border: 8px solid black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.shape {
+    background-color: red;
+    height: 100px;
+    aspect-ratio: 1;
+}
+
+.shape__triangle {
+    background-color: red;
+    aspect-ratio: 1.15;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+.shape__circle {
+    background-color: red;
+
+    border-radius: 100%;
+}
+
+.shape__square {
+}
+
+.shape__hexagon {  
+    /*https://css-shape.com/hexagon/*/
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
 }
