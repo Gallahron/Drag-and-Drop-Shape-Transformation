@@ -28,7 +28,9 @@
             quadrant.addEventListener("drop", e => {
                 e.preventDefault();
 
-                moveShape(e.target);
+                let target = e.target;
+                if (!target.classList.contains("quadrant")) target = target.closest(".quadrant"); 
+                moveShape(target);
             })
         });
 
